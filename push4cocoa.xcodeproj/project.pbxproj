@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E7E28B4BA1E42D79C6B40A6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E263DD74E2904C2E91FEA553 /* libPods.a */; };
 		93056B6D17C709C900AE8AF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93056B6C17C709C900AE8AF6 /* UIKit.framework */; };
 		93056B6F17C709C900AE8AF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93056B6E17C709C900AE8AF6 /* Foundation.framework */; };
 		93056B7117C709C900AE8AF6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93056B7017C709C900AE8AF6 /* CoreGraphics.framework */; };
@@ -19,9 +20,11 @@
 		93056B8617C709CA00AE8AF6 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93056B8417C709CA00AE8AF6 /* MainStoryboard_iPhone.storyboard */; };
 		93056B8917C709CA00AE8AF6 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93056B8717C709CA00AE8AF6 /* MainStoryboard_iPad.storyboard */; };
 		93056B8C17C709CA00AE8AF6 /* PCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93056B8B17C709CA00AE8AF6 /* PCViewController.m */; };
+		9373374117CB3677001459DA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9373374017CB3677001459DA /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2AB17E2F978944739069D5ED /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		93056B6917C709C900AE8AF6 /* push4cocoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = push4cocoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93056B6C17C709C900AE8AF6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		93056B6E17C709C900AE8AF6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -39,6 +42,8 @@
 		93056B8817C709CA00AE8AF6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		93056B8A17C709CA00AE8AF6 /* PCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCViewController.h; sourceTree = "<group>"; };
 		93056B8B17C709CA00AE8AF6 /* PCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCViewController.m; sourceTree = "<group>"; };
+		9373374017CB3677001459DA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		E263DD74E2904C2E91FEA553 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,9 +51,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9373374117CB3677001459DA /* CoreText.framework in Frameworks */,
 				93056B6D17C709C900AE8AF6 /* UIKit.framework in Frameworks */,
 				93056B6F17C709C900AE8AF6 /* Foundation.framework in Frameworks */,
 				93056B7117C709C900AE8AF6 /* CoreGraphics.framework in Frameworks */,
+				2E7E28B4BA1E42D79C6B40A6 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +68,7 @@
 				93056B7217C709C900AE8AF6 /* push4cocoa */,
 				93056B6B17C709C900AE8AF6 /* Frameworks */,
 				93056B6A17C709C900AE8AF6 /* Products */,
+				2AB17E2F978944739069D5ED /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,9 +83,11 @@
 		93056B6B17C709C900AE8AF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9373374017CB3677001459DA /* CoreText.framework */,
 				93056B6C17C709C900AE8AF6 /* UIKit.framework */,
 				93056B6E17C709C900AE8AF6 /* Foundation.framework */,
 				93056B7017C709C900AE8AF6 /* CoreGraphics.framework */,
+				E263DD74E2904C2E91FEA553 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93056B8F17C709CA00AE8AF6 /* Build configuration list for PBXNativeTarget "push4cocoa" */;
 			buildPhases = (
+				1AA8B5AC21474900A5F1032D /* Check Pods Manifest.lock */,
 				93056B6517C709C900AE8AF6 /* Sources */,
 				93056B6617C709C900AE8AF6 /* Frameworks */,
 				93056B6717C709C900AE8AF6 /* Resources */,
+				427F3B2510F44636BD4AC4C5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,6 +151,11 @@
 				CLASSPREFIX = PC;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = lv;
+				TargetAttributes = {
+					93056B6817C709C900AE8AF6 = {
+						DevelopmentTeam = J45F7RZ9E5;
+					};
+				};
 			};
 			buildConfigurationList = 93056B6417C709C900AE8AF6 /* Build configuration list for PBXProject "push4cocoa" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -172,6 +189,37 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1AA8B5AC21474900A5F1032D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		427F3B2510F44636BD4AC4C5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		93056B6517C709C900AE8AF6 /* Sources */ = {
@@ -274,7 +322,9 @@
 		};
 		93056B9017C709CA00AE8AF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AB17E2F978944739069D5ED /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "push4cocoa/push4cocoa-Prefix.pch";
 				INFOPLIST_FILE = "push4cocoa/push4cocoa-Info.plist";
@@ -285,7 +335,9 @@
 		};
 		93056B9117C709CA00AE8AF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AB17E2F978944739069D5ED /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "push4cocoa/push4cocoa-Prefix.pch";
 				INFOPLIST_FILE = "push4cocoa/push4cocoa-Info.plist";
@@ -313,6 +365,7 @@
 				93056B9117C709CA00AE8AF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

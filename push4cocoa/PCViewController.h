@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <socket.IO/SocketIO.h>
 
-@interface PCViewController : UIViewController
+@interface PCViewController : UIViewController <
+	UITextFieldDelegate, SocketIODelegate> {
+		
+	SocketIO *_socketIO;
+		
+}
+
+@property(strong, nonatomic) IBOutlet UITextField *inputField;
+@property(strong, nonatomic) IBOutlet UITextView *textView;
+
 
 @end
